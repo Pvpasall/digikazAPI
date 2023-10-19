@@ -1,0 +1,3 @@
+# Ignore tous les fichiers et dossiers sauf digikazAPI/
+*
+!digikazAPI/
