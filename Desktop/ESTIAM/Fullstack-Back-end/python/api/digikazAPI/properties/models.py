@@ -20,6 +20,7 @@ class PropertiesModel(models.Model) :
     size = models.PositiveIntegerField()  
 
 
+
     def str (self) :
         return self.title
     
