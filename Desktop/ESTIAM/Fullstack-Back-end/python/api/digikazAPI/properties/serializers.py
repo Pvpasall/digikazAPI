@@ -6,6 +6,6 @@ class PropertiesSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = PropertiesModel
-        fields = ['id','title', 'description', 'owner', 'location', 'price', 'property_type', 'size']  
+        fields = ['id','title', 'description', 'userId', 'location', 'price', 'property_type', 'size']  
 
 
