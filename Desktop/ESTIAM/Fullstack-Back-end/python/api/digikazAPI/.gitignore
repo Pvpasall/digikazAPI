@@ -1,1 +1,6 @@
 digikazEnv
+desktop/*
+!desktop/digikazAPI/
+
+
+
