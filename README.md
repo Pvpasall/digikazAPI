@@ -17,7 +17,7 @@ Assurez-vous d'avoir Python 3.x et pip installé sur votre système.
 
   3) Créez un environnement Python en utilisant la commande suivante :
 
-         python3 -m venv nomEnv
+         python -m venv nomEnv
 
   4) Activez l'environnement Python :
 
@@ -25,31 +25,27 @@ Assurez-vous d'avoir Python 3.x et pip installé sur votre système.
 
          Sous MacOS/Linux :  source nomEnv/bin/activate
 
-  5) Installez Django en utilisant la commande :
+  5) Installez les dependance de l'API en utilisant la commande :
      
-         pip install Django
+         pip install -r requirements.txt
 
-  6) Installez Django Rest Framework avec la commande :
-     
-          pip install djangorestframework
-
-  7) Créez un projet Django en utilisant la commande :
+  6) Créez un projet Django en utilisant la commande :
 
           django-admin startproject nomProjet .
 
        Ouvrez le dossier de votre projet dans le terminal.
 
-  8) Créez une application Django en utilisant la commande :
+  7) Créez une application Django en utilisant la commande :
     
           django-admin startapp nomApplication
 
-  9) Synchronisez la base de données SQLite en exécutant la commande :
+  8) Synchronisez la base de données SQLite en exécutant la commande :
      
           python manage.py migrate
 
 ## Exécution
 
-Pour lancer le serveur de développement, utilisez la commande suivante :
+Pour lancer le serveur de développement, utilisez la commande suivante en vous placant sur le repertoire du projet ou il y a le fichier manage.py :
 
           python manage.py runserver
 
@@ -75,12 +71,12 @@ Ce projet comprend des tests unitaires pour assurer le bon fonctionnement de l'A
 Ce projet utilise Git pour le contrôle de version. Assurez-vous de créer des branches de fonctionnalités et de fusionner vos modifications de manière ordonnée.
 
 ## Liens Utiles
-
+- [Telechargement Python] (https://www.python.org/downloads/)
 - [Documentation Django]  (https://docs.djangoproject.com/en/stable/)
 - [Documentation Django Rest Framework] (https://www.django-rest-framework.org/)
 
 
 ## Contributeurs
 
-    Salamata Nourou MBAYE (salambaye2001@gmail.com)
-    Souleymane SALL (souleymanesall@esp.sn)
+    Salamata Nourou MBAYE (salamata-nourou.mbaye@estiam.com)
+    Souleymane SALL (souleymane.sall@estiam.com)
