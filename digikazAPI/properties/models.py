@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 
 def get_default_author():
     user = User.objects.get_or_create(username="admin")[0]
-    print(user)
     return user.id
 
 
