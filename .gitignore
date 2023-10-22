@@ -1,1 +1,6 @@
 digikazEnv
+digikazAPI/digikazAPI/__pycache__
+digikazAPI/users/migrations
+digikazAPI/users/__pycache__
+digikazAPI/properties/migrations
+digikazAPI/properties/__pycache__
