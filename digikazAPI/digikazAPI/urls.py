@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 from users import views as users_views
+from properties import views as properties_views
 
 from rest_framework.routers import DefaultRouter
 from rest_framework import permissions
@@ -22,6 +23,7 @@ schema_view = get_schema_view(
 
 router = DefaultRouter()
 router.register(r"users", users_views.UserViewSet)
+router.register(r"properties", properties_views.PropertiesViewSet)
 
 
 urlpatterns = [
