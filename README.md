@@ -23,7 +23,7 @@ Assurez-vous d'avoir Python 3.x et pip installé sur votre système.
 
          Sous Windows :  nomEnv\Scripts\activate
 
-         Sous MacOS :  source nomEnv/bin/activate
+         Sous MacOS/Linux :  source nomEnv/bin/activate
 
   5) Installez Django en utilisant la commande :
      
