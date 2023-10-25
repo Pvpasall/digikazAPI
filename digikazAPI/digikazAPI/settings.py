@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "properties",
     "rest_framework_simplejwt",
     "drf_yasg",
+    "corsheaders",
 ]
 
 REST_FRAMEWORK = {
@@ -61,6 +62,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "digikazAPI.urls"
@@ -152,5 +154,8 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_EXP_CLAIM": "refresh_exp",
     "SLIDING_TOKEN_LIFETIME": timedelta(minutes=60),
     "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(days=1),
-    # "TOKEN_OBTAIN_SERIALIZER": "digikazAPI.properties.token.MyTokenObtainPairSerializer",
+    "TOKEN_OBTAIN_SERIALIZER": "digikazAPI.properties.token.MyTokenObtainPairSerializer",
 }
+
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:4200"]
